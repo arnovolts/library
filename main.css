@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #444;
+    color: #fff;
+    font-family: "Poppins";
+}
+
+.container{
+    width: 80%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.main-header{
+    margin-top: 3rem;
+}
+
+.logo{
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.btn{
+    border: none;
+    background-color: #fff;
+    font-size: 1.3rem;
+    padding: .5em 2em;
+    border-radius: 5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .5;
+}
+
+.btn-highlight{
+    color: lightgreen;
+    font-weight: bold;
+    margin-right: .2em;
+}
+
+
+/* TABLE */
+
+table{
+    margin-top: 5rem;
+    width: 100%;
+    text-align: left;
+}
+
+td{
+    position: relative;
+    padding: 1em 0;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+
+.table-heading{
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+}
+
+.table-inputs__del{
+    color: #ffb5b5;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

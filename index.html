@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+
+    <!--  Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="main-header container">
+      <div class="logo">MyLib</div>
+    </header>
+    <main class="container">
+      <button id="addBook-btn" class="btn"><span class="btn-highlight">+</span> New Book</button>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <th class="table-heading">Title</th>
+            <th class="table-heading">Author</th>
+            <th class="table-heading"># Page</th>
+            <th class="table-heading">Read</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"Recursion"</td>
+              <td>Blake Crouch</td>
+              <td>336</td>
+              <td class="table-inputs">
+                <input class="table-inputs__checkbox" type="checkbox" />
+
+                <span class="table-inputs__del">del</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>"The Institute"</td>
+              <td>Stephen King</td>
+              <td>576</td>
+              <td class="table-inputs">
+                <input class="table-inputs__checkbox" type="checkbox" />
+
+                <span class="table-inputs__del">del</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
