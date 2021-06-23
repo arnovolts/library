@@ -27,32 +27,48 @@
       <div class="table-container">
         <table>
           <thead>
-            <th class="table-heading">Title</th>
-            <th class="table-heading">Author</th>
-            <th class="table-heading"># Page</th>
-            <th class="table-heading">Read</th>
+              <tr>
+                  <th class="table-heading">Title</th>
+                  <th class="table-heading">Author</th>
+                  <th class="table-heading">Pages</th>
+                  <th class="table-heading">Read</th>                  
+              </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>"Recursion"</td>
-              <td>Blake Crouch</td>
-              <td>336</td>
-              <td class="table-inputs">
-                <input class="table-inputs__checkbox" type="checkbox" />
+              <tr>
+                  <td>"Recursion"</td>
+                  <td>Blake Crouch</td>
+                  <td>336</td>
+                  <td> 
+                      <input type="checkbox" name="read-status" id="read-status">
+                  </td>
+                  <td>
+                      <span class="del-btn">Delete</span>
+                  </td>
+              </tr>
 
-                <span class="table-inputs__del">del</span>
-              </td>
+              <tr>
+                <td>"The Institute"</td>
+                <td>Stephen King</td>
+                <td>576</td>
+                <td> 
+                    <input class="read-status" type="checkbox" name="read-status" id="read-status">
+                </td>
+                <td>
+                    <span class="del-btn">Delete</span>
+                </td>
             </tr>
 
             <tr>
-              <td>"The Institute"</td>
-              <td>Stephen King</td>
-              <td>576</td>
-              <td class="table-inputs">
-                <input class="table-inputs__checkbox" type="checkbox" />
-
-                <span class="table-inputs__del">del</span>
-              </td>
+                <td>"Animals Make Us Human: Creating the Best Life for Animals"</td>
+                <td>Temple Grandin, Catherine Johnson</td>
+                <td>576</td>
+                <td> 
+                    <input class="read-status" type="checkbox" name="read-status" id="read-status">
+                </td>
+                <td>
+                    <span class="del-btn">Delete</span>
+                </td>
             </tr>
           </tbody>
         </table>
