@@ -22,58 +22,108 @@
       <div class="logo">MyLib</div>
     </header>
     <main class="container">
-      <button id="addBook-btn" class="btn"><span class="btn-highlight">+</span> New Book</button>
+      <button id="addBook-btn" type="button" class="addBook-btn">
+        <span class="addBook-btn--highlight">+</span> New Book
+      </button>
 
       <div class="table-container">
         <table>
           <thead>
-              <tr>
-                  <th class="table-heading">Title</th>
-                  <th class="table-heading">Author</th>
-                  <th class="table-heading">Pages</th>
-                  <th class="table-heading">Read</th>                  
-              </tr>
+            <tr>
+              <th scope="col" class="table-heading">Title</th>
+              <th class="table-heading">Author</th>
+              <th class="table-heading">Pages</th>
+              <th class="table-heading">Read</th>
+              <th></th>
+            </tr>
           </thead>
           <tbody>
-              <tr>
-                  <td>"Recursion"</td>
-                  <td>Blake Crouch</td>
-                  <td>336</td>
-                  <td> 
-                      <input type="checkbox" name="read-status" id="read-status">
-                  </td>
-                  <td>
-                      <span class="del-btn">Delete</span>
-                  </td>
-              </tr>
-
-              <tr>
-                <td>"The Institute"</td>
-                <td>Stephen King</td>
-                <td>576</td>
-                <td> 
-                    <input class="read-status" type="checkbox" name="read-status" id="read-status">
-                </td>
-                <td>
-                    <span class="del-btn">Delete</span>
-                </td>
+            <tr>
+              <td>"Recursion"</td>
+              <td>Blake Crouch</td>
+              <td><span class="pages">336</span></td>
+              <td>
+                <label for="rs-0">Read ? </label>
+                <input id="rs-0" class="read-status" type="checkbox" name="read-status" />
+              </td>
+              <td>
+                <span class="del-btn">Delete</span>
+              </td>
             </tr>
 
             <tr>
-                <td>"Animals Make Us Human: Creating the Best Life for Animals"</td>
-                <td>Temple Grandin, Catherine Johnson</td>
-                <td>576</td>
-                <td> 
-                    <input class="read-status" type="checkbox" name="read-status" id="read-status">
-                </td>
-                <td>
-                    <span class="del-btn">Delete</span>
-                </td>
+              <td>"The Institute"</td>
+              <td>Stephen King</td>
+              <td><span class="pages">576</span></td>
+              <td>
+                <label for="rs-1">Read ? </label>
+                <input id="rs-1" class="read-status" type="checkbox" name="read-status" />
+              </td>
+              <td>
+                <span class="del-btn">Delete</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                "Animals Make Us Human: Creating the Best Life for Animals"
+              </td>
+              <td>Temple Grandin, Catherine Johnson</td>
+              <td><span class="pages">576</span></td>
+              <td>
+                <label for="rs-2">Read ? </label>
+                <input id="rs-2" class="read-status" type="checkbox" name="read-status" />
+              </td>
+              <td>
+                <span class="del-btn">Delete</span>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
     </main>
+
+    <div class="modal-container">
+      <article class="modal">
+        <h2 class="modal__heading">Add New Book</h2>
+        <form class="modal__form" onsubmit="return false;">
+          <div class="modal__form__fields">
+            <label for="bookTitle">*Title:</label>
+            <input type="text" name="title" id="bookTitle" required />
+          </div>
+
+          <div class="modal__form__fields">
+            <label for="bookAuthor">*Author:</label>
+            <input type="text" name="author" id="bookAuthor" required />
+          </div>
+          <div class="modal__form__fields">
+            <label for="bookPages">Number Of Pages: </label>
+            <input type="number" name="numPages" id="bookPages" />
+          </div>
+          <div>
+            <p>Have you read the Book:</p>
+            <label for="bookRead-true">Y</label>
+            <input type="radio" name="isRead" id="bookRead-true" value="true" />
+
+            <label for="bookRead-false">N</label>
+            <input
+              type="radio"
+              name="isRead"
+              id="bookRead-false"
+              value="false"
+            />
+          </div>
+
+          <div class="modal__form__btns">
+            <button class="btn btn-cancel">Cancel</button>
+            <input class="btn btn-submit" type="submit" value="Submit" />
+          </div>
+        </form>
+        <footer class="modal__footer">* required fields</footer>
+      </article>
+    </div>
+
+    <!-- My scripts -->
     <script src="index.js"></script>
   </body>
 </html>
