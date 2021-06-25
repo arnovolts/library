@@ -27,6 +27,7 @@
       </button>
 
       <div class="table-container">
+        <h1 class="main-heading"> Start By adding a Book :)</h1>
         <table>
           <thead>
             <tr>
@@ -38,7 +39,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <!-- <tr>
               <td>"Recursion"</td>
               <td>Blake Crouch</td>
               <td><span class="pages">336</span></td>
@@ -77,7 +78,7 @@
               <td>
                 <span class="del-btn">Delete</span>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>
@@ -88,27 +89,27 @@
         <h2 class="modal__heading">Add New Book</h2>
         <form class="modal__form" onsubmit="return false;">
           <div class="modal__form__fields">
-            <label for="bookTitle">*Title:</label>
-            <input type="text" name="title" id="bookTitle" required />
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" />
           </div>
 
           <div class="modal__form__fields">
-            <label for="bookAuthor">*Author:</label>
-            <input type="text" name="author" id="bookAuthor" required />
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" />
           </div>
           <div class="modal__form__fields">
             <label for="bookPages">Number Of Pages: </label>
-            <input type="number" name="numPages" id="bookPages" />
+            <input type="number" id="bookPages" />
           </div>
           <div>
             <p>Have you read the Book:</p>
             <label for="bookRead-true">Y</label>
-            <input type="radio" name="isRead" id="bookRead-true" value="true" />
+            <input type="radio" name="read-status" id="bookRead-true" value="true" checked/>
 
             <label for="bookRead-false">N</label>
             <input
               type="radio"
-              name="isRead"
+              name="read-status"
               id="bookRead-false"
               value="false"
             />
@@ -119,7 +120,7 @@
             <input class="btn btn-submit" type="submit" value="Submit" />
           </div>
         </form>
-        <footer class="modal__footer">* required fields</footer>
+        <footer class="modal__footer"></footer>
       </article>
     </div>
 
