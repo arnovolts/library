@@ -150,6 +150,9 @@ function getData() {
             books[i] = new Book(books[i].title, books[i].author, 
                                 books[i].status, books[i].pages);
         }
-    }
-    return true;
+
+        return true;
+    } 
+        
+    return false;
 }
