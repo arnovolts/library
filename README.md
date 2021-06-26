@@ -17,8 +17,10 @@ function Book(){
 
 } 
 
+const myBook = new Book();
+
 ```
-A function that flips the reading status of book is attached
+A function that flips the reading status of a given book is attached
 to the `Book` prototype: 
 
 ```
@@ -30,6 +32,6 @@ Book.prototype.toggleStatus = function() {
 
 ```
 User generated data is stored in localstorage using the 
-`window.localStorage` api
+`window.localStorage` api.
 
 
